@@ -1,6 +1,18 @@
 
 import utils
 
+tablero1 = crear_tj1()
+tablero2 = crear_tj2()
+barcoj1 = crear_barco_aleatorioj1()
+barcoj2 = crear_barco_aleatorioj2()
+flotaj1 = crear_flotaj1()
+flotaj2 = crear_flotaj2()
+tablero1 =colocar_barcoj1()
+tablero2 = colocar_barcoj2()
+tablero1 = colocar_flotaj1()
+tablero2 = colocar_flotaj2()
+tab_1_shoot = dispararj1()
+tab_2_shoot = dispararj2()
 
 # BUCLE PARA INICIAR EL JUEGO
 
