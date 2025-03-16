@@ -7,7 +7,7 @@ Deberé resolver problemas en la estructura y sintaxis en mi codigo, para que el
 
 # Herramientas utilizadas:
 
-Python y su libreria Numpy.
+Python y sus librerias Numpy y random.
 
 # Presenta:
 ## Juan Manuel de la Fuente Larrocca
