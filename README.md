@@ -9,6 +9,6 @@ Deberé resolver problemas en la estructura y sintaxis en mi codigo, para que el
 
 Python y su libreria Numpy.
 
-#Presenta:
-##Juan Manuel de la Fuente Larrocca
+# Presenta:
+## Juan Manuel de la Fuente Larrocca
 
