@@ -13,7 +13,7 @@ while True:
                 crear_tj2()
                 colocar_flotaj2()          
         break
-
+# BUCLE PARA DETERMINAR DURACION DEL JUEGO
 while True:
     print(tab_1_shoot)
     print()
