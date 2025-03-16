@@ -90,14 +90,14 @@ def colocar_barcoj2 (barco,tab_jug2):
 
 # 5º Colocar flotas en el tablero
 
-def colocar_flotaj1(tab_jug1): 
-    for i in flota:
-        colocar_barcoj1(i, tab_jug1)
+def colocar_flotaj1(flota, tab_jug1): 
+    for barco in flota:
+        colocar_barcoj1(barco, tab_jug1)
     return tab_jug1
 
-def colocar_flotaj2(tab_jug2): 
-    for i in flota:
-        colocar_barcoj2(i, tab_jug2)
+def colocar_flotaj2(flota, tab_jug2): 
+    for barco in flota:
+        colocar_barcoj2(barco, tab_jug2)
     return tab_jug2
 
 
