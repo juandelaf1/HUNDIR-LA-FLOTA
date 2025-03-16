@@ -88,7 +88,7 @@ def colocar_barcoj2 (barco,tab_jug2):
     return tab_jug2
 
 
-# 5º Colocar flota en el tablero
+# 5º Colocar flotas en el tablero
 
 def colocar_flotaj1(tab_jug1): 
     for i in flota:
@@ -108,7 +108,7 @@ def dispararj1():
     if tab_jug2[Fila,Columna]=="O":
         tab_1_shoot[Fila,Columna]="X"
         tab_jug2[Fila,Columna]="X"
-        print(tablero_disparoj1) 
+        print(tab_1_shoot) 
         print("OH NO!! HE FALLADO, TU TURNO")
         return dispararj1()
     else:
@@ -122,11 +122,11 @@ def dispararj2():
     Fila=randint(0,9)
     Columna=randint(0,9)
     if tab_jug1[Fila,Columna]=="O":
-        tab_jug1[Fila,Columna]="*"             
+        tab_jug1[Fila,Columna]="X"             
         print("TE ENCONTRE, MI TURNO NUEVAMENTE")
         return dispararj2()
-    elif tab_jug1[Fila,Columna]==" ":
-        tab_jug1[Fila,Columna]="#"
+    elif tab_jug1[Fila,Columna]=="_":
+        tab_jug1[Fila,Columna]="A"
         print("POR POCO... VENGA, TE TOCA")
         return False
     else:
@@ -140,10 +140,12 @@ while True:
         ingreso = input("Bienvenid@s a HUNDIR LA FLOTA. Marca 1 para comenzar a jugar")
         if ingreso!="":
                 crear_tj1()
-                colocar_barcoj1() #antes colocar flota1
+                colocar_barcoj1() 
+                colocar_flotaj1()
                 print("Estos son tus tableros \n")
                 crear_tj2()
-                colocar_barcoj2()        #antes colocar flota2  
+                colocar_barcoj2() 
+                colocar_flotaj2()  
         break
 
 while True:
