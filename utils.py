@@ -37,6 +37,8 @@ def crear_barco_aleatorioj1(eslora):
         else:
             fila = fila + 1
             barco_aleatorioj1.append((fila, columna))
+    
+        if barco_aleatorioj1 and all(barco_aleatorioj1[fila, columna] == '_' for fila, columna in barco_aleatorioj1):
     return barco_aleatorioj1
 
 def crear_barco_aleatorioj2(eslora):
@@ -52,10 +54,12 @@ def crear_barco_aleatorioj2(eslora):
         else:
             fila = fila + 1
             barco_aleatorioj2.append((fila, columna))
+   
+        if barco_aleatorioj2 and all(barco_aleatorioj2[fila, columna] == '_' for fila, columna in barco_aleatorioj2):
     return barco_aleatorioj2
-
 # (AQUI DEBERIA DETERMINAR LOS LIMITES DEL TABLERO PARA QUE LOS BARCOS NO SE SALGAN Y VERIFICAR QUE NO SE SUPERPONGAN) .
 
+        
 # 3º Crear la flotas de barcos
 
 def crear_flotaj1():
