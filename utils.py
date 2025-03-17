@@ -73,7 +73,8 @@ def crear_flotaj2():
     for n in eslora:
        flota.append(crear_barco_aleatorioj2(n))
     return flota 
-
+flotaj1 = crear_flotaj1()
+flotaj2 = crear_flotaj2()
 
 # 4º Colocar 1 Barco
 
@@ -99,6 +100,9 @@ def colocar_flotaj2(flotaj2, tab_jug2):
     for barcoj2 in flotaj2:
         colocar_barcoj2(barcoj2, tab_jug2)
     return tab_jug2
+
+tablero1 = colocar_flotaj1()
+tablero2 = colocar_flotaj2()
 
 
 # Disparar en los tableros
@@ -131,7 +135,8 @@ def dispararj2():
         return False
     else:
         return dispararj2()      
-
+tab_1_shoot = dispararj1()
+tab_2_shoot = dispararj2()
 
 
 # BUCLE PARA INICIAR EL JUEGO
@@ -140,12 +145,10 @@ while True:
         ingreso = input("Bienvenid@s a HUNDIR LA FLOTA. Marca 1 para comenzar a jugar")
         if ingreso!="":
                 crear_tj1()
-                colocar_barcoj1() 
-                colocar_flotaj1()
+                colocar_flotaj1(flotaj1, tab_jug1)
                 print("Estos son tus tableros \n")
-                crear_tj2()
-                colocar_barcoj2() 
-                colocar_flotaj2()  
+                crear_tj2() 
+                colocar_flotaj2(flotaj1, tab_jug1)  
         break
 
 while True:
