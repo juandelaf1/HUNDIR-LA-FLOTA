@@ -116,12 +116,12 @@ def dispararj1():
         tab_1_shoot[Fila,Columna]="X"
         tab_jug2[Fila,Columna]="X"
         print(tab_1_shoot) 
-        print("OH NO!! HE FALLADO, TU TURNO")
+        print("TE TENGO!, AQUI VOY  DE NUEVO...")
         return dispararj1()
     else:
         tab_1_shoot[Fila,Columna]="A"
         tab_jug2[Fila,Columna]="A"
-        print("TE TENGO!, AQUI VOY  DE NUEVO...")
+        print("OH NO!! HE FALLADO, TU TURNO")
         return False
     
 
