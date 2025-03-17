@@ -82,13 +82,13 @@ flotaj2 = crear_flotaj2()
 
 # 4º Colocar 1 Barco
 
-def colocar_barcoj1 (barco,tab_jug1):
-    for casilla in barco:
+def colocar_barcoj1 (barcoj1,tab_jug1):
+    for casilla in barcoj1:
         tab_jug1[casilla]= "O"
     return tab_jug1
 
-def colocar_barcoj2 (barco,tab_jug2):
-    for casilla in barco:
+def colocar_barcoj2 (barcoj2,tab_jug2):
+    for casilla in barcoj2:
         tab_jug2[casilla]= "O"
     return tab_jug2
 
