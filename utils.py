@@ -101,8 +101,7 @@ def colocar_flotaj2(flotaj2, tab_jug2):
         colocar_barcoj2(barcoj2, tab_jug2)
     return tab_jug2
 
-tablero1 = colocar_flotaj1()
-tablero2 = colocar_flotaj2()
+
 
 
 # Disparar en los tableros
@@ -135,8 +134,7 @@ def dispararj2():
         return False
     else:
         return dispararj2()      
-tab_1_shoot = dispararj1()
-tab_2_shoot = dispararj2()
+
 
 
 # BUCLE PARA INICIAR EL JUEGO
